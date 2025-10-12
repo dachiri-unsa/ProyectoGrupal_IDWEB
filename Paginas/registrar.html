@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrarse</title>
+    <link rel="stylesheet" href="../Estilos/main.css">
+    <link rel="stylesheet" href="../Estilos/registrar.css">
 </head>
 <body>
     <h1>Registrarse</h1>
@@ -11,26 +13,35 @@
         <fieldset>
             <legend>Crea una cuenta</legend>
                 <label>
-                    Nombre
+                    Nombre:
                     <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
                 </label>
                 <br><br>
                 <label>
-                    Correo
-                    <input type="email" name="correo" placeholder="...@correo.com" required>
+                    Correo:
+                    <input type="email" name="correo" placeholder="Ingrese su correo" required>
                 </label>
                 <br><br>
                 <label>
-                    Contraseña
-                    <input type="password" name="contraseña" minlength="6" required>
+                    Contraseña:
+                    <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" minlength="6" required>
                 </label>
                 <br><br>
                 <label>
-                    Confirmar contraseña
+                    Confirmar contraseña:
                     <input type="password" name="c_contraseña" minlength="6" required>
                 </label>
-                <button type="submit">Iniciar sesión</button>
-            <p>¿Ya tienes una cuenta?<a href="inicio_sesion.html">Inicio sesión</a></p>
+                <br><br>
+                <input type="checkbox" id="correos_recibidos">
+                <label for="correos_recibidos">Acepto recibir correos sobre la informacion nueva publicada</label>
+                <br><br>
+                <input type="checkbox" id="terminos">
+                <label for="terminos">Acepto los terminos y condiciones</label>
+                <br><br>
+                <button type="submit">Crear cuenta</button>
+                <button type="reset">Resetear</button>
+                
+            <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html">Inicio sesión</a></p>
         </fieldset>
     </form>
 </body>
