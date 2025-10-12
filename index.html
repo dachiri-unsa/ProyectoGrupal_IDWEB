@@ -3,9 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Comida</title>
+    <link rel="stylesheet" href="Estilos/index.css">
 </head>
 <body>
-    
+    <!-- Header con logo y navegación principal -->
+  <header>
+    <div class="contenedor-header">
+      <h1>DXD comidas</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Menú</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <button><a href="Paginas/inicio_sesion.html">Iniciar Sesión</a></button>
+      <button><a href="Paginas/registrar.html">Registrarse</a></button>
+    </div>
+  </header>
+
+  <!-- Sección introductoria grande -->
+  <section id="inicio">
+    <h2>Bienvenido a DXD comidas</h2>
+    <p>&quot;Sabor casero con ingredientes locales&quot;</p>
+    <!-- En HTML puro puedes dejar un enlace que luego se estilice como botón con CSS -->
+    <p><a href="#menu">Ver el menú</a></p>
+  </section>
+
+  <!-- Sección de menú: lista de categorías y platos -->
+  <section id="menu">
+    <header>
+      <h3>Nuestro Menú</h3>
+      <p>Explora nuestras categorías y platos destacados.</p>
+    </header>
+
+    <!-- Categoría: Entradas -->
+    <article class="categoria">
+      <h4>Entradas</h4>
+      <ul>
+        <li>
+          <figure>
+            <img src="https://comidasperuanas.net/wp-content/uploads/2023/11/Receta-de-Soltero-de-Queso.jpg" alt="Soltero de queso">
+            <figcaption>
+              <strong>Soltero de queso</strong> — Maiz, queso y verduras.<br><span>S/8.90</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://i.ytimg.com/vi/sRz_29KDf8w/maxresdefault.jpg" alt="Causa rellena">
+            <figcaption>
+              <strong>Causa Rellena</strong> — Puré de papa con relleno de pollo.<br><span>S/9.90</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </article>
+
+    <!-- Categoría: Platos principales -->
+    <article class="categoria">
+      <h4>Platos principales</h4>
+      <ul>
+        <li>
+          <figure>
+            <img src="https://mojo.generalmills.com/api/public/content/5g17rSY4GkOQ_zbcA3exqA_gmi_hi_res_jpeg.jpeg?v=f524f7aa&t=16e3ce250f244648bef28c5949fb99ff" alt="Lomo Saltado">
+            <figcaption>
+              <strong>Lomo Saltado</strong> — Descripción corta.<br><span>S/15.00</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure>
+            <img src="https://sivarious.com/wp-content/uploads/2022/12/aji-de-gallina.jpg" alt="Ají de Gallina">
+            <figcaption>
+              <strong>Ají de Gallina</strong> — Descripción corta.<br><span>S/15.00</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </article>
+
+    <!-- Se puede repetir categorías como Postres, Bebidas, etc. -->
+  </section>
+
+  <!-- Sección 'Nosotros' con historia o valores -->
+  <section id="nosotros">
+    <h3>Sobre nosotros</h3>
+    <p>Somos un restaurante Arequipeño que tiene variedad de platos desde tradicionales hasta normales, tambien los días domingos hacemos adobo para el desayuno</p>
+
+    <!-- Información adicional: horario, servicios -->
+    <dl>
+      <dt>Horario</dt>
+      <dd>Lun - Dom: 09:00 - 21:00</dd>
+      <dt>Servicios</dt>
+      <dd>Delivery, Para llevar, Reservas</dd>
+    </dl>
+  </section>
+
+  <!-- Sección de ubicación / mapa -->
+  <section id="ubicacion">
+    <h3>Ubicación</h3>
+    <p>Dirección: Calle Mercaderes 123, Arequipa</p>
+    <!-- mapa de ubicacion -->
+    <div class="mapa-placeholder">[imagen de mapa referencia]</div>
+  </section>
+
+  <!-- Sección de contacto-->
+  <section id="contacto">
+    <h3>Contacto</h3>
+    <p>Teléfono: 000-000-000</p>
+    <p>Correo: DXDcomidas@gmail.com</p>
+  </section>
+
+  <!-- Footer con información legal-->
+  <footer>
+    <p>&copy; <span id="año">2025</span> Comida Rapida. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
