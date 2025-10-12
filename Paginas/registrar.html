@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio Sesion</title>
+    <title>Registrarse</title>
 </head>
 <body>
-    <h1>Inicio de sesión</h1>
+    <h1>Registrarse</h1>
     <form action="#" method="post">
         <fieldset>
-            <legend>Accede a tu cuenta</legend>
+            <legend>Crea una cuenta</legend>
+                <label>
+                    Nombre
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                </label>
+                <br><br>
                 <label>
                     Correo
                     <input type="email" name="correo" placeholder="...@correo.com" required>
@@ -20,8 +25,12 @@
                     <input type="password" name="contraseña" minlength="6" required>
                 </label>
                 <br><br>
+                <label>
+                    Confirmar contraseña
+                    <input type="password" name="c_contraseña" minlength="6" required>
+                </label>
                 <button type="submit">Iniciar sesión</button>
-            <p>¿Aún no tienes cuenta? <a href="registrar.html">Registrate</a></p>
+            <p>¿Ya tienes una cuenta?<a href="inicio_sesion.html">Inicio sesión</a></p>
         </fieldset>
     </form>
 </body>
