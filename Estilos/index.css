@@ -16,6 +16,11 @@ header {
   background-color: #e74c3c;
   color: white;
   padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 .contenedor-header {
@@ -223,4 +228,42 @@ footer {
   color: white;
   text-align: center;
   padding: 20px 10px;
+}
+
+/* ======== SUGERENCIA DEL CHEF ======== */
+#sugerencia-chef {
+  background-color: #fff; /* Fondo blanco para un look limpio */
+  padding: 60px 20px;
+}
+
+.sugerencia-contenido {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Espacio entre la imagen y el texto */
+  max-width: 900px;
+  margin: auto;
+}
+
+.sugerencia-contenido img {
+  width: 280px;
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 10px;
+}
+
+.sugerencia-texto h3 {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.sugerencia-texto h4 {
+  font-size: 1.8rem;
+  margin: 5px 0 10px 0; /* Espaciado reducido */
+}
+
+.sugerencia-texto .precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+  margin-top: 15px;
+  display: block; /* Para que el margen superior funcione */
 }
