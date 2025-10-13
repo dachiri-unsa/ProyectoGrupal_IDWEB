@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+    color: darkred;
+  text-decoration: underline;
+}
+*{
+ background-color: #eeedcf;   
+}
