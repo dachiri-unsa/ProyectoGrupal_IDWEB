@@ -51,14 +51,24 @@ nav a:hover {
   text-decoration: underline;
 }
 
+button {
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border-color: #afbcb5;
+  background-color: #afbcb5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 button a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-button a:hover {
-  text-decoration: underline;
+button:hover {
+  background-color: #818c85;
 }
 
 /* ======== Sección introductoria grande ======== */
@@ -230,11 +240,11 @@ figcaption span {
 /* ======== CONTACTO ======== */
 #contacto {
   padding: 60px 20px;
-  background-color: #fff;
+  background: url('https://media.istockphoto.com/id/470931972/es/foto/arequipa-plaza-en-la-noche.jpg?s=612x612&w=0&k=20&c=c2Uu9oSf5IqGcopKNuIXWeVzM57F1_sfgN9MMvn75B8=') center/cover no-repeat;
   text-align: center;
 }
 
-button {
+#contacto button {
   color: white;
   padding: 10px 20px;
   border-radius: 6px;
@@ -244,7 +254,7 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
+#contacto button:hover {
   background-color: #27ae60;
 }
 
@@ -338,4 +348,83 @@ footer {
 
 .form-contacto button {
   margin-top: 15px;
+}
+/* Botón flotante del carrito */
+#btn-carrito {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, background-color 0.3s;
+  z-index: 1200;
+}
+
+#btn-carrito:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+/* Ventana del carrito */
+.carrito {
+  position: fixed;
+  right: 20px;
+  bottom: 90px;
+  width: 280px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  z-index: 1100;
+  transition: all 0.3s;
+}
+
+.carrito.oculto {
+  transform: translateY(200%);
+  opacity: 0;
+}
+
+.carrito h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #e74c3c;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  font-size: 14px;
+}
+
+#vaciar-carrito {
+  display: block;
+  margin: 10px auto 0;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#vaciar-carrito:hover {
+  background-color: #c0392b;
 }
