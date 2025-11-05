@@ -14,10 +14,10 @@
       <nav>
         <ul>
           <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#menu">Menú</a></li>
+          <li><a href="Paginas/menu.html">Menú</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
           <li><a href="#ubicacion">Ubicación</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="Paginas/contacto.html">Contacto</a></li>
         </ul>
       </nav>
       <a href="Paginas/inicio_sesion.html"><button>Iniciar Sesión</button></a>
@@ -29,15 +29,13 @@
   <section id="inicio">
     <h2>Bienvenido a DXD comidas</h2>
     <p>&quot;Sabor casero con ingredientes locales&quot;</p>
-    <!-- En HTML puro puedes dejar un enlace que luego se estilice como botón con CSS -->
-    <p><a href="#menu">Ver el menú</a></p>
   </section>
 
   <!-- Sección de menú: lista de categorías y platos -->
   <section id="menu">
-    <header>
-      <h3>Nuestro Menú</h3>
-      <p>Explora nuestras categorías y platos destacados.</p>
+    <header id="header-menu">
+      <h3>Platos estrellas</h3>
+      <p>Estos son los platos más consumidos por nuestros clientes.</p>
     </header>
 
     <!-- Categoría: Entradas -->
@@ -49,6 +47,7 @@
             <img src="https://comidasperuanas.net/wp-content/uploads/2023/11/Receta-de-Soltero-de-Queso.jpg" alt="Soltero de queso">
             <figcaption>
               <strong>Soltero de queso</strong> — Maiz, queso y verduras.<br><span>S/8.90</span>
+              <button class="btn-comprar">Comprar</button>
             </figcaption>
           </figure>
         </li>
@@ -57,6 +56,7 @@
             <img src="https://i.ytimg.com/vi/sRz_29KDf8w/maxresdefault.jpg" alt="Causa rellena">
             <figcaption>
               <strong>Causa Rellena</strong> — Puré de papa con relleno de pollo.<br><span>S/9.90</span>
+              <button class="btn-comprar">Comprar</button>
             </figcaption>
           </figure>
         </li>
@@ -72,6 +72,7 @@
             <img src="https://mojo.generalmills.com/api/public/content/5g17rSY4GkOQ_zbcA3exqA_gmi_hi_res_jpeg.jpeg?v=f524f7aa&t=16e3ce250f244648bef28c5949fb99ff" alt="Lomo Saltado">
             <figcaption>
               <strong>Lomo Saltado</strong> — Descripción corta.<br><span>S/15.00</span>
+              <button class="btn-comprar">Comprar</button>
             </figcaption>
           </figure>
         </li>
@@ -80,12 +81,14 @@
             <img src="https://sivarious.com/wp-content/uploads/2022/12/aji-de-gallina.jpg" alt="Ají de Gallina">
             <figcaption>
               <strong>Ají de Gallina</strong> — Descripción corta.<br><span>S/15.00</span>
+              <button class="btn-comprar">Comprar</button>
             </figcaption>
           </figure>
         </li>
       </ul>
     </article>
 
+    <p><a href="Paginas/menu.html">Ver el menú completo.</a></p>
     <!-- Se puede repetir categorías como Postres, Bebidas, etc. -->
   </section>
 
@@ -124,12 +127,6 @@
     <div class="mapa-placeholder">[imagen de mapa referencia]</div>
   </section>
 
-  <!-- Sección de contacto-->
-  <section id="contacto">
-    <h3>Contacto</h3>
-    <p>Teléfono: 913-074-100</p>
-    <p>Correo: DXDcomidas@gmail.com</p>
-  </section>
 
 <!-- Footer con información legal-->
   <footer>

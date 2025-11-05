@@ -20,7 +20,6 @@ header {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
 
 .contenedor-header {
@@ -74,21 +73,17 @@ button a:hover {
   font-size: 2rem;
 }
 
-#inicio a {
-  display: inline-block;
-  background-color: #2ecc71;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 15px;
-}
-
-#inicio a:hover {
-  background-color: #27ae60;
-}
-
 /* ======== MENÚ ======== */
+#header-menu {
+  background-color: #e74c3c;
+  color: white;
+  position: static;
+  padding: 15px 0;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 #menu {
   padding: 60px 20px;
   background-color: #fff;
@@ -156,6 +151,37 @@ figcaption strong {
 figcaption span {
   color: #27ae60;
   font-weight: bold;
+}
+
+#menu a {
+  display: inline-block;
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+#menu a:hover {
+  background-color: #27ae60;
+}
+
+.btn-comprar {
+  margin-top: 6px;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-comprar:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
 }
 
 /* ======== NOSOTROS ======== */
@@ -266,4 +292,50 @@ footer {
   color: #27ae60;
   margin-top: 15px;
   display: block; /* Para que el margen superior funcione */
+}
+
+/* ======== CONTACTO - NUEVA PÁGINA ======== */
+.contacto-principal {
+  padding: 60px 20px;
+  background-color: #fffaf4;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.contacto-principal h2 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.info-contacto p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.form-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-contacto label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-contacto input,
+.form-contacto textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-contacto button {
+  margin-top: 15px;
 }
