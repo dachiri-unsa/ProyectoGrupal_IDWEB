@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse | DXD comidas</title>
+    <link rel="stylesheet" href="../Estilos/index.css">
+</head>
+<body>
+    <header>
+    <div class="contenedor-header">
+      <h1>DXD comidas</h1>
+      <nav>
+        <ul>
+          <li><a href="../../index.html#inicio">Inicio</a></li>
+          <li><a href="menu.html">Menú</a></li>
+          <li><a href="../../index.html#nosotros">Nosotros</a></li>
+          <li><a href="../../index.html#ubicacion">Ubicación</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <button><a href="inicio_sesion.html">Iniciar Sesión</a></button>
+      <button><a href="registrar.html">Registrarse</a></button>
+    </div>
+  </header>
+
+    <section class="form-section">
+        <div class="form-wrapper wide">
+            <h2>Registrarse</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label>Nombre:</label>
+                    <input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="form-group">
+                    <label>Correo:</label>
+                    <input type="email" name="correo" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="form-group">
+                    <label>Contraseña:</label>
+                    <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" minlength="6" required>
+                </div>
+                <div class="form-group">
+                    <label>Confirmar contraseña:</label>
+                    <input type="password" name="c_contraseña" minlength="6" required>
+                </div>
+
+                <div style="margin: 10px 0;">
+                    <input type="checkbox" id="correos_recibidos" style="width: auto;">
+                    <label for="correos_recibidos" style="display: inline; color: #333; font-weight: normal;">Acepto recibir correos sobre la información nueva publicada</label>
+                </div>
+
+                <div style="margin: 10px 0;">
+                    <input type="checkbox" id="terminos" style="width: auto;">
+                    <label for="terminos" style="display: inline; color: #333; font-weight: normal;">Acepto los términos y condiciones</label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit">Crear cuenta</button>
+                    <button type="reset" style="background-color: #e74c3c; margin-left: 10px;">Resetear</button>
+                </div>
+
+                <div class="form-links">
+                    <p>¿Ya tienes una cuenta? <a href="inicio_sesion.html">Inicia sesión</a></p>
+                    <p><a href="../../index.html">Volver al inicio</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+  <footer>
+    <div class="footer-contenido">
+      <h4>DXD comidas</h4>
+      <p>Sabor casero con ingredientes locales en el corazón de Arequipa.</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 DXD comidas. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
