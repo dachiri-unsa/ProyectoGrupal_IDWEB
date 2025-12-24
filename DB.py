@@ -4,7 +4,7 @@ def get_conexion():
     conexion = mysql.connector.connect(
         host="localhost",
         user="root",
-        password="1234",
+        password="1234", # Aquí pon tu contraseña
         database="BD_IDWEB_grupal"
     )
     return conexion

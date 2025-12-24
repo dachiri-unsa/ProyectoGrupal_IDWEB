@@ -1,20 +1,57 @@
-# Avance del proyecto final - Grupal
-## IDWEB - A
+# Proyecto final - Grupal IDWEB - A
+## Nombre del proyecto: Página de comidas
+## Nombre de Grupo: Nexus
 **Integrantes:** 
 - Achiri Cuevas, Daniel Cooper
 - Cavero Ale, Leonardo Ismael
 - Salas Zegarra, Marco Antonio
 
-### 🌐 Mi sitio web:
+### 🌐 Sitio web hospedaje en pythonanywhere:
 
-Aqui la pagina web: [Pagina web](https://dachiri-unsa.github.io/ProyectoGrupal_IDWEB/)
+Aquí link la pagina web: [Pagina web](http://msalasze.pythonanywhere.com/)
 
-### 📁 Directorios
+### Lenguajes utilizados:
 
-- En el directorio "Paginas" se encuentran todas las paginas que no sean el *index.html*, esto con el motivo que si llega haber muchas paginas se mantenga el orden y solamente tal pagina este de primero.
+- HTML 
+- CSS
+- JS
+- Python
+- SQL
 
-- En el directorio "Estilos" se encuentran los archivos *.css* con nombres que referencian su finalidad, y con el *main.css* donde estaran los estilos base de todas las paginas.
+## ▶️ Instrucciones de ejecución
 
-### ❗Aclaraciones
+### 1️⃣ Clonar el repositorio
+```bash
+git https://github.com/dachiri-unsa/ProyectoGrupal_IDWEB
+```
+### 2️⃣ Configurar la base de datos
 
-- Logramos mostrar la pagina gracias a una opcion de Github y el link se encuentra al inicio de este documento.
+MySQL:
+
+- Crear una base de datos, usa este codigo:
+```
+CREATE DATABASE BD_IDWEB_grupal;
+USE BD_IDWEB_grupal;
+
+CREATE TABLE usuarios (
+  id_usuario int(11) NOT NULL AUTO_INCREMENT,
+  gmail varchar(255) NOT NULL,
+  nombre varchar(100) NOT NULL,
+  contrasenia varchar(255) NOT NULL,
+  recibir_correos tinyint(1) NOT NULL DEFAULT 0,
+  PRIMARY KEY (id_usuario),
+  UNIQUE KEY gmail (gmail)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+Recuerda: Para conectar con el MySQL de tu pc cambia el password al suyo en DB.py (linea 07).
+
+### 3️⃣ Ejecutar el servidor 
+Ejecuta el archivo server.py en tu computadora.
+
+### 4️⃣ Acceder a la pagina
+
+Abrir el navegador e ingresar a:
+
+http://localhost:8000
+
+Listo ahí ya puede probar todas las funcionalidades de la página.
